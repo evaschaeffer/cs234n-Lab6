@@ -1,0 +1,9 @@
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\FrameworkLibrary\ToolsCSharp\bin\Debug\ToolsCSharp.dll
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\FrameworkLibrary\ToolsCSharp\bin\Debug\ToolsCSharp.pdb
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\FrameworkLibrary\ToolsCSharp\bin\Debug\nunit.framework.dll
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\FrameworkLibrary\ToolsCSharp\bin\Debug\nunit.framework.pdb
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\FrameworkLibrary\ToolsCSharp\bin\Debug\nunit.framework.xml
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\FrameworkLibrary\ToolsCSharp\obj\Debug\ToolsCSharp.csprojResolveAssemblyReference.cache
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\FrameworkLibrary\ToolsCSharp\obj\Debug\ToolsCSharp.csproj.CoreCompileInputs.cache
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\FrameworkLibrary\ToolsCSharp\obj\Debug\ToolsCSharp.dll
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\FrameworkLibrary\ToolsCSharp\obj\Debug\ToolsCSharp.pdb

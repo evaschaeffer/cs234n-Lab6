@@ -1,0 +1,17 @@
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6Tests\bin\Debug\Lab6Tests.dll
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6Tests\bin\Debug\Lab6Tests.pdb
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6Tests\bin\Debug\Lab6DBClasses.dll
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6Tests\bin\Debug\nunit.framework.dll
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6Tests\bin\Debug\PropsClasses.dll
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6Tests\bin\Debug\ToolsCSharp.dll
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6Tests\bin\Debug\ToolsCSharp.pdb
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6Tests\bin\Debug\Lab6DBClasses.pdb
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6Tests\bin\Debug\PropsClasses.pdb
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6Tests\bin\Debug\nunit.framework.pdb
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6Tests\bin\Debug\nunit.framework.xml
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6Tests\obj\Debug\Lab6Tests.csprojResolveAssemblyReference.cache
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6Tests\obj\Debug\Lab6Tests.csproj.CoreCompileInputs.cache
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6Tests\obj\Debug\Lab6Tests.dll
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6Tests\obj\Debug\Lab6Tests.pdb
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6Tests\bin\Debug\Lab6Classes.dll
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6Tests\bin\Debug\Lab6Classes.pdb

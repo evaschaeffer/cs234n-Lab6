@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ToolsCSharp.BaseTextDB">
+    <Position X="7.5" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkAAAAEAAAA=</HashCode>
+      <FileName>BaseTextDB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ToolsCSharp.BaseBusiness">
+    <Position X="1.5" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AQgAgIAABAAQAAgEJCgAAAAAAAUAABAAAEABUQAoBAI=</HashCode>
+      <FileName>BaseBusiness.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ToolsCSharp.BaseSQLDB">
+    <Position X="7.5" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAACAAAAAAgAAAAAAAACABEAAAAAA=</HashCode>
+      <FileName>BaseSQLDB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ToolsCSharp.IBaseProps">
+    <Position X="5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IBaseProps.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ToolsCSharp.IReadDB">
+    <Position X="5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>IReadDB.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ToolsCSharp.IWriteDB">
+    <Position X="5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAEAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>IWriteDB.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

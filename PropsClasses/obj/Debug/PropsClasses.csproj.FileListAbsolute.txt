@@ -1,0 +1,11 @@
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\PropsClasses\bin\Debug\PropsClasses.dll
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\PropsClasses\bin\Debug\PropsClasses.pdb
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\PropsClasses\bin\Debug\nunit.framework.dll
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\PropsClasses\bin\Debug\ToolsCSharp.dll
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\PropsClasses\bin\Debug\ToolsCSharp.pdb
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\PropsClasses\bin\Debug\nunit.framework.pdb
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\PropsClasses\bin\Debug\nunit.framework.xml
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\PropsClasses\obj\Debug\PropsClasses.csprojResolveAssemblyReference.cache
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\PropsClasses\obj\Debug\PropsClasses.csproj.CoreCompileInputs.cache
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\PropsClasses\obj\Debug\PropsClasses.dll
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\PropsClasses\obj\Debug\PropsClasses.pdb

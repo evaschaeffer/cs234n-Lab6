@@ -1,0 +1,10 @@
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6DBClasses\bin\Debug\Lab6DBClasses.dll
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6DBClasses\bin\Debug\Lab6DBClasses.pdb
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6DBClasses\bin\Debug\PropsClasses.dll
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6DBClasses\bin\Debug\ToolsCSharp.dll
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6DBClasses\bin\Debug\ToolsCSharp.pdb
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6DBClasses\bin\Debug\PropsClasses.pdb
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6DBClasses\obj\Debug\Lab6DBClasses.csprojResolveAssemblyReference.cache
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6DBClasses\obj\Debug\Lab6DBClasses.csproj.CoreCompileInputs.cache
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6DBClasses\obj\Debug\Lab6DBClasses.dll
+C:\Users\eschaef\Documents\LaneCC\cs234n\Lab6\Lab6\Lab6DBClasses\obj\Debug\Lab6DBClasses.pdb
