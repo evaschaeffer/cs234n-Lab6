@@ -49,7 +49,6 @@ namespace PropsClasses
             p.onHandQuantity = 2;
             p.unitPrice = 99;
         }
-
         [Test]
         public void LoadFromDatabase()
         {
@@ -58,7 +57,6 @@ namespace PropsClasses
             Assert.AreEqual("DB1R", product.ProductCode);
 
         }
-
         [Test]
         public void TestGetState()
         {
@@ -67,7 +65,6 @@ namespace PropsClasses
             Assert.True(xml.Contains(p.description));
             Console.WriteLine(xml);
         }
-
         [Test]
         public void TestSetState1()
         {
@@ -77,7 +74,6 @@ namespace PropsClasses
             Assert.AreEqual(p.productID, newP.productID);
             Assert.AreEqual(p.description, newP.description);
         }
-
         [Test]
         public void TestClone()
         {
@@ -100,11 +96,127 @@ namespace PropsClasses
             Assert.AreEqual(p.onHandQuantity, p2.onHandQuantity);
 
         }
-
+        [Test]
         public void TestDBUpdate()
         {
-
+            p = (ProductProps)db.Retrieve(1);
+            p.description = "I like thanksgiving.";
+            Assert.True(db.Update(p));
+            
         }
-        
+        [Test]
+        public void TestDDBelete()
+        {
+            p = (ProductProps)db.Retrieve(2);
+            Assert.True(db.Delete(p));
+        }
+        [Test]
+        public void TestNewEventConstructor()
+        {
+            // not in Data Store - no id
+            Product p = new Product(dataSource);
+            Console.WriteLine(p.ToString());
+            Assert.Greater(p.ToString().Length, 1);
+        }
+        [Test]
+        public void TestRetrieveFromDataStoreContructor()
+        {
+            // retrieves from Data Store
+            Product p = new Product(1, dataSource);
+            Assert.AreEqual(p.ProductID, 1);
+            Assert.AreEqual(p.Description, "Murach's ASP.NET 4 Web Programming with C# 2010");
+            Console.WriteLine(p.ToString());
+        }
+
+        [Test]
+        public void TestSaveToDataStore()
+        {
+            Product p = new Product(dataSource);
+            p.ProductCode = "TWO";
+            p.Description = "I like to have two drinks in my hand.";
+            p.Save();
+            Assert.AreEqual(17, p.ProductID);
+        }
+
+        [Test]
+        public void TestUpdate()
+        {
+            Product p = new Product(3, dataSource);
+            p.ProductCode = "TEST";
+            p.Description = "Test Product";
+            p.Save();
+
+            p = new Product(3, dataSource);
+            Assert.AreEqual(p.ProductCode, "TEST".Trim());
+            Assert.AreEqual(p.Description, "Test Product".Trim());
+        }
+
+        [Test]
+        public void TestDelete()
+        {
+            Product p = new Product(2, dataSource);
+            p.Delete();
+            p.Save();
+            Assert.Throws<Exception>(() => new Product(2, dataSource));
+        }
+        [Test]
+        public void TestStaticGetList()
+        {
+            List<Product> products = Product.GetList(dataSource);
+            Assert.AreEqual(16, products.Count);
+            Assert.AreEqual(1, products[0].ProductID);
+            Assert.AreEqual("A4CS", products[0].ProductCode);
+        }
+        [Test]
+        public void TestGetList()
+        {
+            Product p = new Product(dataSource);
+            List<Product> products = (List<Product>)p.GetList();
+            Assert.AreEqual(16, products.Count);
+            Assert.AreEqual("A4CS", products[0].ProductCode);
+            Assert.AreEqual("Murach's ASP.NET 4 Web Programming with C# 2010", products[0].Description);
+        }
+        [Test]
+        public void TestGetTable()
+        {
+            DataTable products = Product.GetTable(dataSource);
+            Assert.AreEqual(products.Rows.Count, 16);
+        }
+
+        [Test]
+        public void TestNoRequiredPropertiesNotSet()
+        {
+            // not in Data Store - userid, title and description must be provided
+            Product p = new Product(dataSource);
+            Assert.Throws<Exception>(() => p.Save());
+        }
+
+        [Test]
+        public void TestSomeRequiredPropertiesNotSet()
+        {
+            // not in Data Store - userid, title and description must be provided
+            Product p = new Product(dataSource);
+            Assert.Throws<Exception>(() => p.Save());
+            p.ProductCode = "TEST";
+            Assert.Throws<Exception>(() => p.Save());
+        }
+        [Test]
+        public void TestInvalidPropertyProductCodeSet()
+        {
+            Product p = new Product(dataSource);
+            Assert.Throws<ArgumentOutOfRangeException>(() => p.ProductCode = "012345678912");
+        }
+        [Test]
+        public void TestConcurrencyIssue()
+        {
+            Product p1 = new Product(1, dataSource);
+            Product p2 = new Product(1, dataSource);
+
+            p1.Description = "Updated this first";
+            p1.Save();
+
+            p2.Description = "Updated this second";
+            Assert.Throws<Exception>(() => p2.Save());
+        }
     }
 }

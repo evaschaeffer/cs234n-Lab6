@@ -44,7 +44,7 @@ namespace PropsClasses
         /// <summary>
         /// 
         /// </summary>
-        public int zipCode = Int32.MinValue;
+        public string zipCode = "";
 
         /// <summary>
         /// ConcurrencyID. See main docs, don't manipulate directly
@@ -99,7 +99,8 @@ namespace PropsClasses
             this.name = (string)dr["Name"];
             this.address = (string)dr["Address"];
             this.city = (string)dr["City"];
-            this.zipCode = (Int32)dr["ZipCode"];
+            this.zipCode = (string)dr["ZipCode"];
+            this.state = (string)dr["State"];
             this.ConcurrencyID = (Int32)dr["ConcurrencyID"];
         }
         #endregion

@@ -132,7 +132,7 @@ namespace Lab6Classes
                 }
             }
         }
-        public int ZipCode
+        public string ZipCode
         {
             get
             {
@@ -143,7 +143,7 @@ namespace Lab6Classes
             {
                 if (!(value == ((CustomerProps)mProps).zipCode))
                 {
-                    if (value > 0 || value > 16)
+                    if (value.Trim().Length > 0 || value.Trim().Length > 16)
                     {
                         mRules.RuleBroken("ZipCode", false);
                         ((CustomerProps)mProps).zipCode = value;

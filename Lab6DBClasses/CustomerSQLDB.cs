@@ -130,12 +130,14 @@ namespace Lab6DBClasses
             command.Parameters.Add("@City", SqlDbType.VarChar);
             command.Parameters.Add("@State", SqlDbType.Char);
             command.Parameters.Add("@ZipCode", SqlDbType.Char);
+            command.Parameters.Add("@ConcurrencyID", SqlDbType.Int);
             command.Parameters[0].Direction = ParameterDirection.Output;
             command.Parameters["@Name"].Value = props.name;
             command.Parameters["@Address"].Value = props.address;
             command.Parameters["@City"].Value = props.city;
             command.Parameters["@State"].Value = props.state;
             command.Parameters["@ZipCode"].Value = props.zipCode;
+            command.Parameters["@ConcurrencyID"].Value = props.ConcurrencyID;
 
             try
             {
@@ -210,7 +212,7 @@ namespace Lab6DBClasses
             CustomerProps props = (CustomerProps)c;
 
             DBCommand command = new DBCommand();
-            command.CommandText = "usp_EventUpdate";
+            command.CommandText = "usp_CustomerUpdate";
             command.CommandType = CommandType.StoredProcedure;
             command.Parameters.Add("@CustomerID", SqlDbType.Int);
             command.Parameters.Add("@Name", SqlDbType.VarChar);
@@ -218,11 +220,14 @@ namespace Lab6DBClasses
             command.Parameters.Add("@City", SqlDbType.VarChar);
             command.Parameters.Add("@State", SqlDbType.Char);
             command.Parameters.Add("@ZipCode", SqlDbType.Char);
+            command.Parameters.Add("@ConcurrencyID", SqlDbType.Int);
+            command.Parameters["@CustomerID"].Value = props.customerID;
             command.Parameters["@Name"].Value = props.name;
             command.Parameters["@Address"].Value = props.address;
             command.Parameters["@City"].Value = props.city;
             command.Parameters["@State"].Value = props.state;
             command.Parameters["@ZipCode"].Value = props.zipCode;
+            command.Parameters["@ConcurrencyID"].Value = props.ConcurrencyID;
 
             try
             {

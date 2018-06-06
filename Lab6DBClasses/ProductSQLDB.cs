@@ -210,15 +210,18 @@ namespace Lab6DBClasses
             DBCommand command = new DBCommand();
             command.CommandText = "usp_ProductUpdate";
             command.CommandType = CommandType.StoredProcedure;
-            command.Parameters.Add("@productID", SqlDbType.Int);
-            command.Parameters.Add("@productCode", SqlDbType.Char);
+            command.Parameters.Add("@ProductID", SqlDbType.Int);
+            command.Parameters.Add("@ProductCode", SqlDbType.Char);
             command.Parameters.Add("@Description", SqlDbType.VarChar);
             command.Parameters.Add("@UnitPrice", SqlDbType.Decimal);
             command.Parameters.Add("@OnHandQuantity", SqlDbType.Int);
-            command.Parameters["@productCode"].Value = props.productCode;
+            command.Parameters.Add("@ConcurrencyID", SqlDbType.Int);
+            command.Parameters["@ProductID"].Value = props.productID;
+            command.Parameters["@ProductCode"].Value = props.productCode;
             command.Parameters["@Description"].Value = props.description;
             command.Parameters["@UnitPrice"].Value = props.unitPrice;
             command.Parameters["@OnHandQuantity"].Value = props.onHandQuantity;
+            command.Parameters["@ConcurrencyID"].Value = props.ConcurrencyID;
 
             try
             {
